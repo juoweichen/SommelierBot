@@ -49,7 +49,7 @@
 # 8) eval $(docker-machine env sommelier)
 # Then you can proceed to re-run steps 5) and 6) again
 #
-# ================= Finished the project and want to cleanup? ==================
+# ================= Finished th`e project and want to cleanup? ==================
 #
 # After you are done with the project it might be a good idea to clean up all
 # images and the virtual machine since they take up a LOT of space...
