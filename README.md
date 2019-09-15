@@ -1,2 +1,3 @@
 # ft_sommelier
-First ML project in 42
+This project is the gateway to the machine learning branch. It will also help you become a master sommelier!
+
