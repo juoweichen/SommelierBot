@@ -51,13 +51,12 @@ Another nice property of this cost function is that it is convex; thus, we can u
  
 ![image of alcohol_ph_adaline](https://github.com/pootitan/ft_sommelier/blob/master/img/alcohol_ph_adaline.png)<br>
 As the result shows that Adaline was able to distinguish more complex wine quality with fair enough accuracy, and it took way less training epochs then Adaline.<br>
- 
-<!-- ![image of loss function](https://github.com/pootitan/ft_sommelier/blob/master/img/loss_func.png)<br> -->
+
 <img src="https://github.com/pootitan/ft_sommelier/blob/master/img/loss_func.png" height="50%" width="50%">
 The above plot shows that the cost of each epoch. The cost droped dramatically at the begining and become gradually soon because gradient getting flatten when it closer to the convex, which is the minimum possible cost we can get.<br>
  
 ## Search for good learning rate
-![image of gradient](https://github.com/pootitan/ft_sommelier/blob/master/img/gradient_lr.png)<br>
+<img src="https://github.com/pootitan/ft_sommelier/blob/master/img/gradient.png">
 Looking for a good learning rate is essential in gradient descending algorithms because as the figure on the right shows that, if the learning rate is too large, it would fall to converge because net input overshooting the global minimum. On the other hand, if the learning rate is too small, it might be descending slower so it would need more epoch to reach the global minimum.<br>
  
 In order to find the best possible learning rate, I clamped the range of learning rates by experimenting with rounds of training. If the result diverge then I lower the learning rate upper limit, on the other hand, if the result took too much epoch to train, I increase the bottom limit.<br>
@@ -70,7 +69,8 @@ Overfitting is a common problem in machine learning, where a model performs well
 on unseen data.<br>
  
 There's several way to fight the overfitting, one of them is using k-fold cross-validation. We split the data to k equal size set, and in each round, we choose a set of data as the validation set and feeding the rest of the data to train, after every sub-set had been chosen, the validation ends. <br>
-![image of k-fold](https://github.com/pootitan/ft_sommelier/blob/master/img/kfold.png)<br>
+<!-- ![image of k-fold](https://github.com/pootitan/ft_sommelier/blob/master/img/kfold.png)<br> -->
+<img src="https://github.com/pootitan/ft_sommelier/blob/master/img/kfold.png" height="50%" width="50%">
 The k-fold result shows that, after 5 rounds of validation, the average accuracy was 0.84, not too far from our target accuracy 0.85.
  
 ## Multi-dimension classification
