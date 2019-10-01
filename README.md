@@ -64,7 +64,7 @@ In order to find the best possible learning rate, I clamped the range of learnin
 ## Training and Validation
 We overcome a lots of troubles in order to reach our best possible classified result, and we finally got it! Hooray!<br>
 But the trues is, the result probably gonna kill in lab but adopted poorly to real-world data, why is this happened? To explain this we need to understand overfitting. <br>
-![image of overfitting](https://github.com/pootitan/ft_sommelier/blob/master/img/overfitting.png )<br>
+<img src="https://github.com/pootitan/ft_sommelier/blob/master/img/overfitting.png" height="75%" width="75%">
 Overfitting is a common problem in machine learning, where a model performs well on training data but does not generalize well to unseen data (test data). If a model suffers from overfitting, we also say that the model has a high variance, which can be caused by having too many parameters that lead to a model that is too complex given the underlying data. Similarly, our model can also suffer from underfitting (high bias), which means that our model is not complex enough to capture the pattern in the training data well and therefore also suffers from low performance
 on unseen data.<br>
  
