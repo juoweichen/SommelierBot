@@ -68,9 +68,23 @@ But the trues is, the result probably gonna kill in lab but adopted poorly to re
 Overfitting is a common problem in machine learning, where a model performs well on training data but does not generalize well to unseen data (test data). If a model suffers from overfitting, we also say that the model has a high variance, which can be caused by having too many parameters that lead to a model that is too complex given the underlying data. Similarly, our model can also suffer from underfitting (high bias), which means that our model is not complex enough to capture the pattern in the training data well and therefore also suffers from low performance
 on unseen data.<br>
  
-There's several way to fight the overfitting, one of them is using k-fold cross-validation. We split the data to k equal size set, and in each round, we choose a set of data as the validation set and feeding the rest of the data to train, after every sub-set had been chosen, the validation ends. <br>
-<!-- ![image of k-fold](https://github.com/pootitan/ft_sommelier/blob/master/img/kfold.png)<br> -->
-<img src="https://github.com/pootitan/ft_sommelier/blob/master/img/kfold.png" height="50%" width="50%">
+There's several way to fight the overfitting, one of them is using k-fold cross-validation. We split the data to k equal size set, and in each round, we choose a set of data as the validation set and feeding the rest of the data to train, after every sub-set had been chosen, the validation ends.<br>
+```
+learning rate searching complete, searching result:
+best learning rate:  0.0048627, epoch taken: 3, accuracy: 0.882
+
+Apply learning rate: 0.0048627, target accuracy: 0.800
+building k fold data set...complete, training size: 224, test size: 56
+Start k fold cross validation...
+k: 0, correct: 47
+k: 1, correct: 46
+k: 2, correct: 49
+k: 3, correct: 49
+k: 4, correct: 46
+--------------------------------------------------------------
+K fold cross validation complete, validaton result:
+test set size: 56, mean: [47.4], std: 1.517, Accuracy: [0.84642857]
+```
 The k-fold result shows that, after 5 rounds of validation, the average accuracy was 0.84, not too far from our target accuracy 0.85.
  
 ## Multi-dimension classification
