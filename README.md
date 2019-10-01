@@ -52,7 +52,8 @@ Another nice property of this cost function is that it is convex; thus, we can u
 ![image of alcohol_ph_adaline](https://github.com/pootitan/ft_sommelier/blob/master/img/alcohol_ph_adaline.png)<br>
 As the result shows that Adaline was able to distinguish more complex wine quality with fair enough accuracy, and it took way less training epochs then Adaline.<br>
  
-![image of loss function](https://github.com/pootitan/ft_sommelier/blob/master/img/loss_func.png){:height="50%" width="50%"}<br>
+<!-- ![image of loss function](https://github.com/pootitan/ft_sommelier/blob/master/img/loss_func.png)<br> -->
+<img src="https://github.com/pootitan/ft_sommelier/blob/master/img/loss_func.png" height="50%" width="50%">
 The above plot shows that the cost of each epoch. The cost droped dramatically at the begining and become gradually soon because gradient getting flatten when it closer to the convex, which is the minimum possible cost we can get.<br>
  
 ## Search for good learning rate
@@ -64,12 +65,12 @@ In order to find the best possible learning rate, I clamped the range of learnin
 ## Training and Validation
 We overcome a lots of troubles in order to reach our best possible classified result, and we finally got it! Hooray!<br>
 But the trues is, the result probably gonna kill in lab but adopted poorly to real-world data, why is this happened? To explain this we need to understand overfitting. <br>
-![image of overfitting](https://github.com/pootitan/ft_sommelier/blob/master/img/overfitting.png)<br>
+![image of overfitting](https://github.com/pootitan/ft_sommelier/blob/master/img/overfitting.png )<br>
 Overfitting is a common problem in machine learning, where a model performs well on training data but does not generalize well to unseen data (test data). If a model suffers from overfitting, we also say that the model has a high variance, which can be caused by having too many parameters that lead to a model that is too complex given the underlying data. Similarly, our model can also suffer from underfitting (high bias), which means that our model is not complex enough to capture the pattern in the training data well and therefore also suffers from low performance
 on unseen data.<br>
  
 There's several way to fight the overfitting, one of them is using k-fold cross-validation. We split the data to k equal size set, and in each round, we choose a set of data as the validation set and feeding the rest of the data to train, after every sub-set had been chosen, the validation ends. <br>
-![image of k-fold](https://github.com/pootitan/ft_sommelier/blob/master/img/kfold.png){:height="50%" width="50%"}<br>
+![image of k-fold](https://github.com/pootitan/ft_sommelier/blob/master/img/kfold.png)<br>
 The k-fold result shows that, after 5 rounds of validation, the average accuracy was 0.84, not too far from our target accuracy 0.85.
  
 ## Multi-dimension classification
