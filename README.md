@@ -52,11 +52,11 @@ Another nice property of this cost function is that it is convex; thus, we can u
 ![image of alcohol_ph_adaline](https://github.com/pootitan/ft_sommelier/blob/master/img/alcohol_ph_adaline.png)<br>
 As the result shows that Adaline was able to distinguish more complex wine quality with fair enough accuracy, and it took way less training epochs then Adaline.<br>
 
-<img src="https://github.com/pootitan/ft_sommelier/blob/master/img/loss_func.png" height="50%" width="50%">
+<img src="https://github.com/pootitan/ft_sommelier/blob/master/img/loss_func.png" height="50%" width="50%"><br>
 The above plot shows that the cost of each epoch. The cost droped dramatically at the begining and become gradually soon because gradient getting flatten when it closer to the convex, which is the minimum possible cost we can get.<br>
  
 ## Search for good learning rate
-<img src="https://github.com/pootitan/ft_sommelier/blob/master/img/gradient.png">
+<img src="https://github.com/pootitan/ft_sommelier/blob/master/img/gradient.png"><br>
 Looking for a good learning rate is essential in gradient descending algorithms because as the figure on the right shows that, if the learning rate is too large, it would fall to converge because net input overshooting the global minimum. On the other hand, if the learning rate is too small, it might be descending slower so it would need more epoch to reach the global minimum.<br>
  
 In order to find the best possible learning rate, I clamped the range of learning rates by experimenting with rounds of training. If the result diverge then I lower the learning rate upper limit, on the other hand, if the result took too much epoch to train, I increase the bottom limit.<br>
@@ -64,7 +64,7 @@ In order to find the best possible learning rate, I clamped the range of learnin
 ## Training and Validation
 We overcome a lots of troubles in order to reach our best possible classified result, and we finally got it! Hooray!<br>
 But the trues is, the result probably gonna kill in lab but adopted poorly to real-world data, why is this happened? To explain this we need to understand overfitting. <br>
-<img src="https://github.com/pootitan/ft_sommelier/blob/master/img/overfitting.png" height="75%" width="75%">
+<img src="https://github.com/pootitan/ft_sommelier/blob/master/img/overfitting.png" height="75%" width="75%"><br>
 Overfitting is a common problem in machine learning, where a model performs well on training data but does not generalize well to unseen data (test data). If a model suffers from overfitting, we also say that the model has a high variance, which can be caused by having too many parameters that lead to a model that is too complex given the underlying data. Similarly, our model can also suffer from underfitting (high bias), which means that our model is not complex enough to capture the pattern in the training data well and therefore also suffers from low performance
 on unseen data.<br>
  
