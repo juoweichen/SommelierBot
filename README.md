@@ -28,7 +28,7 @@ A detailed chemical analysis has provided a number of red and white wines (wineq
 - Beside above parameters, there's a “Quality” parameter which is a simulation of the score that three trained wine tasters would give the wine. Thus, each row in the dataset describes the chemical characteristics and quality score for a particular wine.
  
 In order to have a better understanding of our data, we're been ask to draw a scatter matrix diagraph to show the distribution of each parameter in pairs for visual demonstration and comparison.
-![image of scatter matrix](https://github.com/pootitan/ft_sommelier/blob/master/img/scatter_matrix.png)
+<img src="https://github.com/pootitan/ft_sommelier/blob/master/img/scatter_matrix.png" height="125%" width="125%">
  
 ## Perceptron
 ![image of perceptron](https://github.com/pootitan/ft_sommelier/blob/master/img/perceptron.png)<br>
