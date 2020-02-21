@@ -1,4 +1,4 @@
-# ft_sommelier
+# SommelierBot
 This project is the gateway to the machine learning branch. It will help you become a master sommelier!<br>
 The goal of this project is to design a single neuron perceptron machine to distinguish between high and low-quality wines!
  
